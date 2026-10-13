@@ -12,9 +12,9 @@ import (
 )
 
 var (
-	errNS          = errorx.NewNamespace("myapp")
-	errConfigLoad  = errNS.NewType("config_load")
-	errDBConnect   = errNS.NewType("db_connect", errorx.Temporary())
+	errNS         = errorx.NewNamespace("myapp")
+	errConfigLoad = errNS.NewType("config_load")
+	errDBConnect  = errNS.NewType("db_connect", errorx.Temporary())
 )
 
 const (
